@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogIn">
+
+    <TextView
+        android:id="@+id/girisText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Hesabınız var mı? Giriş yapmak için tıklayın!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#757575"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kayitButon" />
+
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="270dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/background3"
+        android:ems="10"
+        android:hint="E-mail:"
+        android:inputType="textEmailAddress"
+        android:paddingStart="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameText" />
+
+    <EditText
+        android:id="@+id/usernameText"
+        android:layout_width="270dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/background3"
+        android:ems="10"
+        android:hint="Kullanıcı Adı:"
+        android:paddingStart="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="270dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/background3"
+        android:ems="10"
+        android:hint="Şifre:"
+        android:inputType="textPassword"
+        android:paddingStart="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailText" />
+
+    <Button
+        android:id="@+id/kayitButon"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="270dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="25dp"
+        android:onClick="kayitClicked"
+        android:text="Kaydol"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/passwordText"
+        app:layout_constraintStart_toStartOf="@+id/passwordText"
+        app:layout_constraintTop_toBottomOf="@+id/passwordText" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="225dp"
+        android:layout_height="291dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/app_logo_icon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

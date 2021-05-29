@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    tools:ignore="ExtraText">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_userInfo"
+            android:icon="@drawable/icon_user"
+            android:title="@string/user_profile" />
+
+        <item
+            android:id="@+id/nav_registration"
+            android:icon="@drawable/person_add"
+            android:title="@string/add_patient" />
+
+        <item
+            android:id="@+id/nav_patients"
+            android:icon="@drawable/icon_registered_patients"
+            android:title="@string/registered_patients" />
+
+        /item
+            android:id="@+id/nav_docInfo"
+            android:icon="@drawable/icon_doc"
+            android:title="@string/doc_profile" />
+
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/icon_logout"
+            android:title="@string/logout" />
+
+
+    </group>
+
+</menu>

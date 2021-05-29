@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_registration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/patientImageView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="35dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/patient_image" />
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="40dp"
+                android:text="Hasta Bilgileri:"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/patientImageView"
+                app:layout_constraintTop_toBottomOf="@+id/patientImageView" />
+
+            <EditText
+                android:id="@+id/patientNoText"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:ems="10"
+                android:hint="Numarası:"
+                android:background="@drawable/background3"
+                android:paddingStart="14dp"
+                android:inputType="number"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/patientImageView"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <EditText
+                android:id="@+id/patientNameText"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Adı:"
+                android:background="@drawable/background3"
+                android:paddingStart="14dp"
+                android:inputType="text"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/patientNoText"
+                app:layout_constraintTop_toBottomOf="@+id/patientNoText" />
+
+            <EditText
+                android:id="@+id/patientAgeText"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/background3"
+                android:paddingStart="14dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Yaşı:"
+                android:inputType="number"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/patientNameText"
+                app:layout_constraintTop_toBottomOf="@+id/patientNameText" />
+
+            <EditText
+                android:id="@+id/patientIllText"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/background3"
+                android:paddingStart="14dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Hastalık:"
+                android:inputType="text"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/patientAgeText"
+                app:layout_constraintTop_toBottomOf="@+id/patientAgeText" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Randevu "
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textView"
+                app:layout_constraintTop_toBottomOf="@+id/patientIllText" />
+
+            <Button
+
+                android:id="@+id/reminder_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:elevation="10dp"
+
+                android:text="@string/reminder"
+                android:textSize="10sp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox"
+                tools:ignore="SmallSp"
+                tools:visibility="visible" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView2"
+                app:layout_constraintStart_toEndOf="@+id/textView2"
+                app:layout_constraintTop_toTopOf="@+id/textView2"
+                app:layout_constraintVertical_bias="0.482" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/add_patient_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/background4"
+        android:layout_marginStart="325dp"
+        android:layout_marginBottom="30dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="+"
+        />
+
+</FrameLayout>

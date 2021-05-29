@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "214878385282",
+    "firebase_url": "https://hasta-takibi-6eb3f-default-rtdb.firebaseio.com",
+    "project_id": "hasta-takibi-6eb3f",
+    "storage_bucket": "hasta-takibi-6eb3f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:214878385282:android:3e7f651aa0b2470f9af09b",
+        "android_client_info": {
+          "package_name": "com.fati.surveillance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "214878385282-nrhqu1ebs1r0ff37gjj23s2fpsd8tp79.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByEkpqVaj1MsYPMp5n6Spqqiovw7GJ_78"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "214878385282-nrhqu1ebs1r0ff37gjj23s2fpsd8tp79.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
